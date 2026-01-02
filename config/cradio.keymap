@@ -78,7 +78,7 @@
             >;
         };
 
-        setting_layyer {
+        setting_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
