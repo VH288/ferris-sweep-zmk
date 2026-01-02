@@ -21,14 +21,7 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -80,10 +73,10 @@
 
         setting_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&sys_reset   &none          &none          &none          &none    &none  &none       &none           &none  &sys_reset
+&bootloader  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none    &none  &bt BT_CLR  &bt BT_CLR_ALL  &none  &bootloader
+&none        &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &none    &none  &none       &none           &none  &none
+                                           &none          &none    &none  &none
             >;
         };
     };
